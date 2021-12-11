@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Chem Final Calculator</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<body onload="loadFunction()">
+    <div class="head">
+        <br>
+        <h1>Intro Chem I Calculator</h1>
+        <h2>See what grade you need on the final!</h2>
+        <p>(Still try your best anyway!)</p>
+    </div>
+    <br>
+    <div class="start" id="start">
+        <p>Select your professor:</p>
+        <button class="btn" onclick=StartTolman()>Tolman</button>
+        <button class="btn" onclick="StartHernandez();">Hernandez</button>
+        <br>
+        <br>
+        <br>
+        <i>Developed by Zuriel Joven</i>    
+    </div>
+    <div class="box" id="second">
+        <p>What is your JITT Quiz total?</p>
+        <input class="text-input" type="number" placeholder="Out of 1020" id="jitt">
+        <br>
+        <button class="next" onclick="SubmitJITT();">Next</button>
+    </div>
+    <div class="box" id="third">
+        <p>How many recitations did you attend?</p>
+        <input class="text-input" type="number" placeholder="Out of 12" id="recitation">
+        <br>
+        <button class="next" onclick="SubmitRecitation();">Next</button>
+    </div>
+    <div class="box" id="fourth">
+        <p>What is your Achieve HW score?</p>
+        <input class="text-input" type="number" placeholder="Out of 100" id="hw">
+        <br>
+        <button class="next" onclick="SubmitHW();">Next</button>
+    </div>
+    <div class="box" id="fifth">
+        <p>What was your Exam 1 score?</p>
+        <input class="text-input" type="number" placeholder="Out of 100" id="exam1">
+        <br>
+        <button class="next" onclick="SubmitExam1();">Next</button>
+    </div>
+    <div class="box" id="sixth">
+        <p>What was your Exam 2 score?</p>
+        <input class="text-input" type="number" placeholder="Out of 100" id="exam2">
+        <br>
+        <button class="next" onclick="SubmitExam2();">Next</button>
+    </div>
+    <div class="box" id="seventh">
+        <p>What was your Exam 3 score?</p>
+        <input class="text-input" type="number" placeholder="Out of 100" id="exam3">
+        <br>
+        <button class="next" onclick="SubmitExam3();">Next</button>
+    </div>
+    <div class="box" id="final">
+        <p>Here's what you need depending on your goal:</p>
+        <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                    <tr>
+                        <th>GPA</th>
+                        <th>Letter Grade</th>
+                        <th>Minimum on Final</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0" id="table">
+                <tbody>
+                    <tr>
+                        <td>4.0</td>
+                        <td>A (92-100)</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>3.7</td>
+                        <td>A- (88-91.9)</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>3.3</td>
+                        <td>B+ (84-87.9)</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>3.0</td>
+                        <td>B (80-83.9)</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>2.7</td>
+                        <td>B- (76-89.9)</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>2.3</td>
+                        <td>C+ (72-75.9)</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>2.0</td>
+                        <td>C (68-71.9)</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>1.7</td>
+                        <td>C- (64-67.9)</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>1.0</td>
+                        <td>D (60-63.9)</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>0.0</td>
+                        <td>F (0-59.9)</td>
+                        <td>TBD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
